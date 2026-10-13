@@ -18,8 +18,9 @@ for i in range(rolls):
 
 average = total / rolls
 
+# results: {history} to the file write
 with open(file_path, "a") as file:
-    file.write(f"sides: {sides}, rolls: {rolls}, total: {total}, average: {average}\n")
+    file.write(f"sides: {sides}, rolls: {rolls}, results: {history}, total: {total}, average: {average}\n")
 
 print(f"data written to: {file_path}")
 print(f"results: {history}")
